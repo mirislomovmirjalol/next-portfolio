@@ -20,7 +20,7 @@ export default function Home() {
             {/*Header*/}
             <Header/>
             {/*Hero*/}
-            <section className="flex items-center justify-center snap-start" id="hero">
+            <section className="flex items-center justify-center snap-start" id="home">
                 <Hero/>
             </section>
             {/*About*/}

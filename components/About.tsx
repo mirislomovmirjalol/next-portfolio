@@ -1,31 +1,59 @@
 import {motion} from "framer-motion";
+import BackgroundCircles from "./BackgroundCircles";
+import React from "react";
 
 type Props = {}
 
 export default function About({}: Props) {
     return (
-        <div
-            className="flex items-center justify-center h-screen w-full z-10">
+        <div className="flex relative items-center justify-center h-screen w-full z-10">
+            <div className="overflow-auto absolute top-24 uppercase flex items-center justify-center">
+                <motion.h1
+                    whileInView={{y: [20, 0]}}
+                    transition={{delay: 0.1, duration: 1}}
+                    className="tracking-[20px] text-2xl text-gray-500 hidden md:block">
+                    About
+                </motion.h1>
+            </div>
             <div
-                className="relative p-16 md:p-32 max-w-screen-md w-full flex flex-col items-center justify-center rounded-3xl md:shadow-xl shadow-gray-700 bg-gray-800 z-10">
+                className="relative px-8 md:p-32 max-w-screen-md w-full flex flex-col items-center justify-center rounded-3xl md:shadow-xl shadow-gray-700 bg-gray-800 z-10">
 
-                <div className="overflow-hidden">
-                    <motion.h1
-                        whileInView={{y: [70, 0]}}
-                        transition={{delay: 0.1, duration: 1}}
-                        className="text-6xl md:text-8xl font-bold my-4 tracking-wide font-space">About
-                    </motion.h1>
-                    <motion.h1
-                        whileInView={{y: [70, 0]}}
-                        transition={{delay: 0.2, duration: 1.2}}
-                        className="text-6xl md:text-8xl font-bold my-4 tracking-wide font-space">About
-                    </motion.h1>
-                    <motion.h1
-                        whileInView={{y: [70, 0]}}
-                        transition={{delay: 0.3, duration: 1.4}}
-                        className="text-6xl md:text-8xl font-bold my-4 tracking-wide font-space">About
-                    </motion.h1>
+                <img
+                    className="rounded-xl h-64 object-cover mb-4"
+                    src="https://images.unsplash.com/photo-1525971996320-268f0402052f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHBlcnNvbnxlbnwwfDJ8MHxibGFja3w%3D&auto=format&fit=crop&w=800&q=60"
+                    alt=""/>
+                <div className="text-gray-400 my-4 overflow-hidden">
+                    <motion.h4
+                        whileInView={{opacity: [0, 1], y: [-40, 0]}}
+                        transition={{delay: 0.3}}
+                        className="font-bold text-2xl my-2 tracking-wider">
+                        Basic Info
+                    </motion.h4>
+                    <motion.p
+                        whileInView={{opacity: [0, 1]}}
+                        transition={{delay: 0.5}}
+                        className="text-sm my-2">
+                        I'm 18 years old. I can code quite a number of language. I'm software engineering student.
+                    </motion.p>
                 </div>
+
+                <div>
+                    <motion.a
+                        initial={{x: -100}}
+                        whileInView={{x: [10, 0]}}
+                        href="#home"
+                        className="py-2 px-6 border border-white text-white rounded-lg mt-16 font-semibold text-xl hover:shadow-lg hover:shadow-white transition-all mx-4">
+                        Home
+                    </motion.a>
+                    <motion.a
+                        initial={{x: 100}}
+                        whileInView={{x: [-10, 0]}}
+                        href="#about"
+                        className="py-2 px-6 bg-white rounded-lg text-gray-800 mt-16 font-semibold text-xl hover:shadow-lg hover:shadow-white transition-all mx-4">
+                        About
+                    </motion.a>
+                </div>
+                <BackgroundCircles/>
             </div>
         </div>
     )
