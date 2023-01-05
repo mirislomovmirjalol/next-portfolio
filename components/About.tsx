@@ -33,7 +33,7 @@ export default function About({}: Props) {
                         whileInView={{opacity: [0, 1]}}
                         transition={{delay: 0.5}}
                         className="text-sm my-2">
-                        I'm 18 years old. I can code quite a number of language. I'm software engineering student.
+                        I'm 18 years old. I'm software engineering student. My strongest skills around designing structure of databases, making rest APIs, web apps such as admin dashboard, SPA, websites. I'm always ready to learn new technologies and improve my skills.
                     </motion.p>
                 </div>
 
