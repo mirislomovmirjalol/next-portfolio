@@ -19,7 +19,7 @@ export default function About({}: Props) {
                 className="relative px-8 md:p-32 max-w-screen-md w-full flex flex-col items-center justify-center rounded-3xl md:shadow-xl shadow-gray-700 bg-gray-800 z-10">
 
                 <motion.img
-                    whileInView={{opacity: [0, 1], y: [20, 0]}}
+                    whileInView={{opacity: [0, 1]}}
                     transition={{duration: 1}}
                     className="rounded-xl h-64 object-cover mb-4 shadow-2xl shadow-gray-800"
                     src="https://images.unsplash.com/photo-1525971996320-268f0402052f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHBlcnNvbnxlbnwwfDJ8MHxibGFja3w%3D&auto=format&fit=crop&w=800&q=60"
@@ -46,12 +46,12 @@ export default function About({}: Props) {
                     <a
                         href="#home"
                         className="py-2 px-6 border border-white text-white rounded-lg mt-16 font-semibold text-xl hover:shadow-lg hover:shadow-white transition-all mx-4">
-                        Home
+                        About
                     </a>
                     <a
-                        href="#about"
+                        href="#projects"
                         className="py-2 px-6 bg-white rounded-lg text-gray-800 mt-16 font-semibold text-xl hover:shadow-lg hover:shadow-white transition-all mx-4">
-                        About
+                        Projects
                     </a>
                 </div>
                 <BackgroundCircles/>

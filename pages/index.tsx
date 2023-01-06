@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import BackgroundCircles from "../components/BackgroundCircles";
 import React from "react";
 import About from "../components/About";
+import Projects from "../components/Projects";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -27,10 +28,10 @@ export default function Home() {
             <section className="snap-center" id="about">
                 <About/>
             </section>
-            {/*Skills*/}
-
             {/*Projects*/}
-
+            <section className="snap-center" id="projects">
+                <Projects/>
+            </section>
             {/*Contact*/}
 
             {/*Footer*/}
