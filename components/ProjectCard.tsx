@@ -7,7 +7,7 @@ type Props = {}
 export default function ProjectCard({}: Props) {
     return (
         <article
-            className="mt-4 md:mt-12 p-6 md:p-8 shadow-inset-white dark:shadow-none rounded-3xl flex flex-col md:flex-row items-center flex-shrink-0 w-4/5 md:w- snap-center">
+            className="mt-4 md:mt-12 p-6 md:p-8 shadow-inset-white dark:shadow-none rounded-3xl flex flex-col md:flex-row items-center flex-shrink-0 w-4/5 md:w-full snap-center">
             <motion.img
                 whileInView={{opacity: [0, 1]}}
                 transition={{duration: 1}}
