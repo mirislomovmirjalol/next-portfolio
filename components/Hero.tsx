@@ -17,7 +17,7 @@ export default function Hero({}: Props) {
             <div
                 className="relative p-16 md:p-32 max-w-screen-md w-full flex flex-col items-center justify-center rounded-3xl md:shadow-xl shadow-gray-700 bg-gray-800 z-10">
                 <p
-                    className="inline-flex items-center text-center text-lg md:text-2xl text-gray-300 tracking-wide">
+                    className="inline-flex items-center text-center text-lg md:text-2xl text-gray-4Z00 tracking-wide">
                     Hello, I'm
                 </p>
                 <div className="overflow-hidden">
@@ -27,7 +27,7 @@ export default function Hero({}: Props) {
                         className="text-6xl md:text-8xl font-bold my-4 tracking-wide font-space">Jalol
                     </motion.h1>
                 </div>
-                <h2 className="mt-6 text-lg md:text-xl text-center tracking-wide text-gray-300">
+                <h2 className="mt-6 text-lg md:text-xl text-center tracking-wide text-gray-4Z00">
                     {text}
                     <Cursor cursorColor="#F4D168"/>
                 </h2>
