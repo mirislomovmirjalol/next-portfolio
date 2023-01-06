@@ -1,5 +1,4 @@
 import {motion} from "framer-motion";
-import BackgroundCircles from "./BackgroundCircles";
 import React from "react";
 
 type Props = {}
