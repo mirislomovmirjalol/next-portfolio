@@ -41,7 +41,7 @@ export default function Contact({}: Props) {
                     </motion.p>
                     <motion.p
                         whileInView={{opacity: [0, 1]}}
-                        transition={{delay: 0.5}}
+                        transition={{delay: 0.7}}
                         className="text-lg my-2 flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                              stroke="currentColor" className="w-6 h-6 mr-2">
