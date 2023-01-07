@@ -33,9 +33,9 @@ export default function Projects({}: Props) {
                         About
                     </a>
                     <a
-                        href="#home"
+                        href="#contact"
                         className="py-2 px-6 bg-white rounded-lg text-gray-800 mt-16 font-semibold text-xl hover:shadow-lg hover:shadow-white transition-all mx-4">
-                        Home
+                        Contact
                     </a>
                 </div>
                 <BackgroundCircles/>
