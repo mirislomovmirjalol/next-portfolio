@@ -46,7 +46,7 @@ export default function About({}: Props) {
                     <a
                         href="#home"
                         className="py-2 px-6 border border-white text-white rounded-lg mt-16 font-semibold text-xl hover:shadow-lg hover:shadow-white transition-all mx-4">
-                        About
+                        Home
                     </a>
                     <a
                         href="#projects"
